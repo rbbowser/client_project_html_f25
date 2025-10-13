@@ -1,0 +1,318 @@
+/* UMSI Career Development Resource Hub - Simple CSS
+   SI 539 Deliverable #2 - Mobile First Design
+   No media queries, basic CSS only */
+
+/* Basic Colors for WCAG AA Compliance */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0 calc(3vw + 5px);
+    line-height: 1.5;
+}
+
+/* Skip to Main Content Link */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    background-color: #00274C;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Header */
+header {
+    background-color: #00274C;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0 calc(-3vw - 5px);
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin: 20px 0 20px 0;
+    font-size: calc(1.5em + 1vw);
+    color: white;
+}
+
+/* Navigation Grid - All items on one line with responsive text */
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    background-color: white;
+    color: #00274C;
+    padding: 12px 8px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid white;
+    font-size: calc(0.8em + 0.6vw);
+}
+
+nav a:visited {
+    color: #00274C;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #FFCB05;
+    color: black;
+}
+
+/* Current page indicator */
+nav a[aria-current="page"] {
+    background-color: #FFCB05;
+    color: black;
+}
+
+/* Main content - wider on desktop */
+main {
+    padding: 20px 0;
+    max-width: calc(800px + 20vw);
+    margin: 0 auto;
+}
+
+/* Typography with larger responsive sizing */
+h1, h2, h3 {
+    color: black;
+}
+
+h2 {
+    font-size: calc(1.4em + 0.8vw);
+    margin: 30px 0 15px 0;
+}
+
+h3 {
+    font-size: calc(1.1em + 0.5vw);
+    margin: 20px 0 10px 0;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: calc(1rem + 0.4vw);
+}
+
+/* Links */
+a {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #551A8B;
+}
+
+a:hover,
+a:focus {
+    background-color: #FFCB05;
+    color: black;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: calc(1rem + 0.4vw);
+}
+
+/* Simple sections */
+section {
+    margin-bottom: 40px;
+}
+
+/* Hero section */
+.hero-section {
+    background-color: #F0F0F0;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #CCCCCC;
+}
+
+/* Quick links grid */
+.start-here-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.quick-links {
+    background-color: #F0F0F0;
+    padding: 20px;
+    border: 1px solid #CCCCCC;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links a {
+    display: block;
+    background-color: white;
+    color: #0000EE;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    text-decoration: underline;
+    font-size: calc(1rem + 0.3vw);
+}
+
+.quick-links a:hover,
+.quick-links a:focus {
+    background-color: #FFCB05;
+    color: black;
+}
+
+/* Simple resource list */
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    background-color: #F0F0F0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #CCCCCC;
+}
+
+.resource-list a {
+    font-weight: bold;
+    font-size: calc(1.1em + 0.4vw);
+}
+
+.resource-list p {
+    font-size: calc(0.95em + 0.3vw);
+}
+
+/* Steps list with numbers */
+.steps-list {
+    counter-reset: step-counter;
+    list-style: none;
+    padding: 0;
+}
+
+.steps-list li {
+    counter-increment: step-counter;
+    background-color: #F0F0F0;
+    padding: 15px;
+    padding-left: 50px;
+    margin-bottom: 15px;
+    border: 1px solid #CCCCCC;
+    position: relative;
+    font-size: calc(1rem + 0.3vw);
+}
+
+.steps-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background-color: black;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+/* FAQ sections */
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.faq-item {
+    border: 1px solid #CCCCCC;
+    background-color: white;
+}
+
+.faq-item h3 {
+    background-color: #F0F0F0;
+    padding: 15px;
+    margin: 0;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: calc(1.1em + 0.4vw);
+}
+
+.faq-item p {
+    padding: 15px;
+    margin: 0;
+    font-size: calc(1rem + 0.3vw);
+}
+
+/* Career paths grid */
+.career-paths {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.career-path {
+    background-color: #F0F0F0;
+    padding: 20px;
+    border: 1px solid #CCCCCC;
+}
+
+/* Videos - Much larger and responsive */
+iframe {
+    max-width: 100%;
+    width: 100%;
+    height: calc(300px + 15vw);
+    margin: 20px 0;
+    border: 1px solid #CCCCCC;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 50px calc(-3vw - 5px) 0 calc(-3vw - 5px);
+}
+
+footer a {
+    color: #FFCB05;
+}
+
+footer a:hover,
+footer a:focus {
+    color: white;
+    background-color: #FFCB05;
+}
