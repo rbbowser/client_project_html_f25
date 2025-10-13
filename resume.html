@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resumes - UMSI Career Hub</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Skip to main content link for accessibility -->
+    <!-- Skip to main content link - hidden by default, shows on focus -->
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+    
     <header>
-        <a href="#main">Skip to Main Content</a>
-        <img src="UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resumes</a></li>
+                <li><a href="resume.html" aria-current="page">Resumes</a></li>
                 <li><a href="network.html">Networking & Connections</a></li>
                 <li><a href="career_exploration.html">Career Exploration</a></li>
             </ul>
@@ -37,7 +40,7 @@
 
         <section>
             <h2>Resume Writing Made Easy: Steps to Success</h2>
-            <ol>
+            <ol class="steps-list">
                 <li><strong>Download a UMSI-Approved Template:</strong> Start with a format that works—no need to design from scratch.</li>
                 <li><strong>Gather Your Experiences:</strong> List jobs, internships, volunteer roles, coursework, and projects most relevant to your goals.</li>
                 <li><strong>Write Impactful Bullets:</strong> Use action verbs and highlight your skills, results, and unique contributions.</li>
@@ -48,33 +51,33 @@
 
         <section>
             <h2>Resume Resources</h2>
-            <ul>
+            <ul class="resource-list">
                 <li>
                     <a href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0" target="_blank">
                         UMSI Resume Guide and Rubric
-                    </a><br>
-                    Comprehensive UMSI guide including tips, formatting rules, and sample accomplishments.
+                    </a>
+                    <p>Comprehensive UMSI guide including tips, formatting rules, and sample accomplishments.</p>
                 </li>
                 <li>
                     <a href="https://docs.google.com/document/d/1-EVZYH_Fic4mfLVGOXyHTSeRwBWmmi2WHSgGDLGGPEs/edit?tab=t.0" target="_blank">
                         Writing Effective Resume Bullets
-                    </a><br>
-                    Learn how to describe your work and impact in ways employers notice.
+                    </a>
+                    <p>Learn how to describe your work and impact in ways employers notice.</p>
                 </li>
                 <li>
                     <a href="https://docs.google.com/document/d/1vJMfgw9nwpHN9Sy0L0RP0aNBbaDSsiLPc2vy-doac6s/edit?tab=t.0" target="_blank">
                         Resume Rubric
-                    </a><br>
-                    Evaluate your resume using the same criteria as UMSI's Career Development Office.
+                    </a>
+                    <p>Evaluate your resume using the same criteria as UMSI's Career Development Office.</p>
                 </li>
                 <li>
                     <a href="https://umich.instructure.com/courses/137916/modules/items/434069" target="_blank">
                         Application Materials: Workshops and More
-                    </a><br>
-                    Attend a Resume Refresh workshop, review video tutorials, or access additional templates.
+                    </a>
+                    <p>Attend a Resume Refresh workshop, review video tutorials, or access additional templates.</p>
                 </li>
             </ul>
-            <p>
+            <p class="cta-text">
                 Ready for review? <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">Book a resume review appointment with a CDO Career Coach</a>.
             </p>
         </section>
@@ -84,7 +87,7 @@
             <p>
                 Choose from UMSI-approved resume templates that are designed to meet employer expectations and pass through applicant tracking systems (ATS). These templates are specifically formatted for information science roles and include examples relevant to UMSI students.
             </p>
-            <ul>
+            <ul class="template-list">
                 <li>Traditional chronological format for students with consistent work experience</li>
                 <li>Functional format highlighting skills and projects for career changers</li>
                 <li>Hybrid format combining chronological and functional elements</li>
@@ -92,43 +95,38 @@
             </ul>
         </section>
 
-        <section>
+        <section class="faq-section">
             <h2>Resume FAQ</h2>
-            <ul>
-                <li>
-                    <strong>How long should my resume be?</strong><br>
-                    For most UMSI students and new grads, one page is best. More experienced professionals may require two pages.
-                </li>
-                <li>
-                    <strong>Do I need a different resume for each application?</strong><br>
-                    It's wise to tailor your resume to the requirements and keywords of each opportunity.
-                </li>
-                <li>
-                    <strong>Is it okay to include coursework or student projects?</strong><br>
-                    Absolutely! UMSI coursework and projects are valued by employers, especially if they show relevant skills and impact.
-                </li>
-                <li>
-                    <strong>How often should I update my resume?</strong><br>
-                    Update your resume every semester, after major projects, or whenever you gain a new role or responsibility.
-                </li>
-                <li>
-                    <strong>What file format should I use?</strong><br>
-                    PDF is generally preferred to maintain formatting, but some employers may request Word documents. Always check the application instructions.
-                </li>
-                <li>
-                    <strong>Should I include a photo or personal information?</strong><br>
-                    In the US, avoid including photos, age, marital status, or other personal information that isn't relevant to your qualifications.
-                </li>
-            </ul>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How long should my resume be?</h3>
+                    <p>For most UMSI students and new grads, one page is best. More experienced professionals may require two pages.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do I need a different resume for each application?</h3>
+                    <p>It's wise to tailor your resume to the requirements and keywords of each opportunity.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is it okay to include coursework or student projects?</h3>
+                    <p>Absolutely! UMSI coursework and projects are valued by employers, especially if they show relevant skills and impact.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How often should I update my resume?</h3>
+                    <p>Update your resume every semester, after major projects, or whenever you gain a new role or responsibility.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What file format should I use?</h3>
+                    <p>PDF is generally preferred to maintain formatting, but some employers may request Word documents. Always check the application instructions.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Should I include a photo or personal information?</h3>
+                    <p>In the US, avoid including photos, age, marital status, or other personal information that isn't relevant to your qualifications.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- Content generated by AI based on UMSI career outcomes data and common career paths 
-             for information science graduates. Resources align with UMSI CDO guidance.
-        
-        Navigation updated to be consistent across all pages
-        Skip to main content link fixed to properly link to main element
-        Removed placeholder content and added additional relevant sections
-        Fixed broken link to Application Materials module -->
+        <!-- Content taken & modified from UMGPT with the prompt, "for the same content write me some intro content and resources for a resume page" - this was after I had asked for content for the home page.
+        UMGPT. (2025). UMGPT (GPT-4.1 August 25th version) [Large language model].-->
     </main>
 
     <footer>
