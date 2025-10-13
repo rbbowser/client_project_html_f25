@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Networking & Building Connections - UMSI Career Hub</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Skip to main content link for accessibility -->
+    <!-- Skip to main content link - hidden by default, shows on focus -->
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+    
     <header>
-        <a href="#main">Skip to Main Content</a>
-        <img src="UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resumes</a></li>
-                <li><a href="network.html">Networking & Connections</a></li>
+                <li><a href="network.html" aria-current="page">Networking & Connections</a></li>
                 <li><a href="career_exploration.html">Career Exploration</a></li>
             </ul>
         </nav>
@@ -39,7 +42,7 @@
 
         <section>
             <h2>Getting Started with Networking</h2>
-            <ol>
+            <ol class="steps-list">
                 <li><strong>Start with Your Existing Network:</strong> Begin with classmates, professors, and people you already know professionally.</li>
                 <li><strong>Define Your Goals:</strong> Are you exploring career paths, seeking internships, or looking for mentorship?</li>
                 <li><strong>Research Before You Reach Out:</strong> Learn about the person and their work before making contact.</li>
@@ -50,79 +53,85 @@
 
         <section>
             <h2>Essential Networking Resources</h2>
-            <ul>
+            <ul class="resource-list">
                 <li>
                     <a href="https://docs.google.com/document/d/18HMt79BU8ovGf9z7_P7No5tuwUS6qHNW5u0sgrepLtE/edit?tab=t.0" target="_blank">
                         Intro to Making Connections
-                    </a><br>
-                    Learn the fundamentals of professional networking and how to make meaningful connections in your field.
+                    </a>
+                    <p>Learn the fundamentals of professional networking and how to make meaningful connections in your field.</p>
                 </li>
                 <li>
                     <a href="https://docs.google.com/document/d/1kGdyGN4C_cwYZHxo7VGzNSB8zGNf8F9CwYEtXGqOlHs/edit?tab=t.0" target="_blank">
                         Networking Outreach Email Examples
-                    </a><br>
-                    Templates and examples for reaching out to professionals, alumni, and potential mentors via email.
+                    </a>
+                    <p>Templates and examples for reaching out to professionals, alumni, and potential mentors via email.</p>
                 </li>
                 <li>
                     <a href="https://docs.google.com/document/d/1aTqF-r7gQhLQW-dV3vZWYxH3jGfUpGnZ9K2L8fPqR7k/edit?tab=t.0" target="_blank">
                         Informational Interviews Using the TIARA Method
-                    </a><br>
-                    Master the art of informational interviews with this structured approach to learning from professionals.
+                    </a>
+                    <p>Master the art of informational interviews with this structured approach to learning from professionals.</p>
                 </li>
                 <li>
                     <a href="https://umich.instructure.com/courses/137916/pages/attend-an-event" target="_blank">
                         Attend a Career Event
-                    </a><br>
-                    Discover upcoming networking events, career fairs, and professional development opportunities.
+                    </a>
+                    <p>Discover upcoming networking events, career fairs, and professional development opportunities.</p>
                 </li>
             </ul>
         </section>
 
         <section>
             <h2>Networking in Action</h2>
-            <h3>Types of Professional Connections</h3>
-            <ul>
-                <li><strong>Alumni Networks:</strong> UMSI graduates working in your areas of interest</li>
-                <li><strong>Industry Professionals:</strong> People currently working in roles or companies you're curious about</li>
-                <li><strong>Peer Networks:</strong> Classmates and students in related programs</li>
-                <li><strong>Faculty and Staff:</strong> Professors and university professionals with industry experience</li>
-                <li><strong>Online Communities:</strong> Professional groups on LinkedIn, Slack, and industry-specific platforms</li>
-            </ul>
+            <div class="networking-content">
+                <div class="connection-types">
+                    <h3>Types of Professional Connections</h3>
+                    <ul class="connection-list">
+                        <li><strong>Alumni Networks:</strong> UMSI graduates working in your areas of interest</li>
+                        <li><strong>Industry Professionals:</strong> People currently working in roles or companies you're curious about</li>
+                        <li><strong>Peer Networks:</strong> Classmates and students in related programs</li>
+                        <li><strong>Faculty and Staff:</strong> Professors and university professionals with industry experience</li>
+                        <li><strong>Online Communities:</strong> Professional groups on LinkedIn, Slack, and industry-specific platforms</li>
+                    </ul>
+                </div>
 
-            <h3>Best Practices for Professional Outreach</h3>
-            <ul>
-                <li>Be specific about what you're seeking and why</li>
-                <li>Respect people's time - suggest brief meetings (15-20 minutes)</li>
-                <li>Offer to meet virtually or at their convenience</li>
-                <li>Come prepared with thoughtful questions</li>
-                <li>Always follow up with a thank you note</li>
-                <li>Look for ways to give back and help others</li>
-            </ul>
+                <div class="best-practices">
+                    <h3>Best Practices for Professional Outreach</h3>
+                    <ul class="practice-list">
+                        <li>Be specific about what you're seeking and why</li>
+                        <li>Respect people's time - suggest brief meetings (15-20 minutes)</li>
+                        <li>Offer to meet virtually or at their convenience</li>
+                        <li>Come prepared with thoughtful questions</li>
+                        <li>Always follow up with a thank you note</li>
+                        <li>Look for ways to give back and help others</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <section class="faq-section">
             <h2>Networking FAQ</h2>
-            <ul>
-                <li>
-                    <strong>I'm introverted. How can I network effectively?</strong><br>
-                    Focus on one-on-one conversations rather than large events. Online networking through LinkedIn can be less intimidating, and informational interviews allow for deeper connections.
-                </li>
-                <li>
-                    <strong>What do I say when reaching out to someone I don't know?</strong><br>
-                    Be honest about your connection (UMSI student, found them through LinkedIn, etc.), specific about your ask, and concise in your message. Check our email templates for examples.
-                </li>
-                <li>
-                    <strong>How do I maintain professional relationships over time?</strong><br>
-                    Send periodic updates about your progress, share relevant articles or opportunities, and offer help when you can. Quality matters more than frequency.
-                </li>
-                <li>
-                    <strong>When should I start networking?</strong><br>
-                    Now! Networking is most effective when you're not desperately job searching. Start building relationships early in your academic program.
-                </li>
-            </ul>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>I'm introverted. How can I network effectively?</h3>
+                    <p>Focus on one-on-one conversations rather than large events. Online networking through LinkedIn can be less intimidating, and informational interviews allow for deeper connections.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What do I say when reaching out to someone I don't know?</h3>
+                    <p>Be honest about your connection (UMSI student, found them through LinkedIn, etc.), specific about your ask, and concise in your message. Check our email templates for examples.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I maintain professional relationships over time?</h3>
+                    <p>Send periodic updates about your progress, share relevant articles or opportunities, and offer help when you can. Quality matters more than frequency.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>When should I start networking?</h3>
+                    <p>Now! Networking is most effective when you're not desperately job searching. Start building relationships early in your academic program.</p>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <section class="support-section">
             <h2>Get Support</h2>
             <p>
                 Need help crafting the perfect outreach email or preparing for an informational interview? 
@@ -131,13 +140,13 @@
             </p>
         </section>
 
-        <!-- Content generated by AI based on UMSI career outcomes data and common career paths 
-             for information science graduates. Resources align with UMSI CDO guidance. -->
+        <!-- Content developed based on UMSI CDO Canvas resources and networking best practices 
+             for information science students. Resources linked are from the UMSI CDO Canvas site.-->
     </main>
 
     <footer>
         <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a></p>
     </footer>
 </body>
-
 </html>
+
