@@ -1,8 +1,3 @@
-/* UMSI Career Development Resource Hub - Simple CSS
-   SI 539 Deliverable #2 - Mobile First Design
-   No media queries, basic CSS only */
-
-/* Basic Colors for WCAG AA Compliance */
 body {
     font-family: Arial, sans-serif;
     background-color: white;
@@ -12,7 +7,6 @@ body {
     line-height: 1.5;
 }
 
-/* Skip to Main Content Link */
 .skip-link {
     position: absolute;
     top: -100px;
@@ -28,7 +22,6 @@ body {
     top: 10px;
 }
 
-/* Header */
 header {
     background-color: #00274C;
     color: white;
@@ -49,7 +42,6 @@ header h1 {
     color: white;
 }
 
-/* Navigation Grid - All items on one line with responsive text */
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -81,20 +73,17 @@ nav a:focus {
     color: black;
 }
 
-/* Current page indicator */
 nav a[aria-current="page"] {
     background-color: #FFCB05;
     color: black;
 }
 
-/* Main content - wider on desktop */
 main {
     padding: 20px 0;
     max-width: calc(800px + 20vw);
     margin: 0 auto;
 }
 
-/* Typography with larger responsive sizing */
 h1, h2, h3 {
     color: black;
 }
@@ -114,7 +103,6 @@ p {
     font-size: calc(1rem + 0.4vw);
 }
 
-/* Links */
 a {
     color: #0000EE;
     text-decoration: underline;
@@ -130,13 +118,11 @@ a:focus {
     color: black;
 }
 
-/* Images */
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Lists */
 ul, ol {
     margin-bottom: 20px;
     padding-left: 30px;
@@ -147,12 +133,10 @@ li {
     font-size: calc(1rem + 0.4vw);
 }
 
-/* Simple sections */
 section {
     margin-bottom: 40px;
 }
 
-/* Hero section */
 .hero-section {
     background-color: #F0F0F0;
     padding: 20px;
@@ -160,7 +144,6 @@ section {
     border: 1px solid #CCCCCC;
 }
 
-/* Quick links grid */
 .start-here-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -196,7 +179,6 @@ section {
     color: black;
 }
 
-/* Simple resource list */
 .resource-list {
     list-style: none;
     padding: 0;
@@ -218,7 +200,6 @@ section {
     font-size: calc(0.95em + 0.3vw);
 }
 
-/* Steps list with numbers */
 .steps-list {
     counter-reset: step-counter;
     list-style: none;
@@ -250,7 +231,6 @@ section {
     font-weight: bold;
 }
 
-/* FAQ sections */
 .faq-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -276,7 +256,6 @@ section {
     font-size: calc(1rem + 0.3vw);
 }
 
-/* Career paths grid */
 .career-paths {
     display: grid;
     grid-template-columns: 1fr;
@@ -298,7 +277,6 @@ iframe {
     border: 1px solid #CCCCCC;
 }
 
-/* Footer */
 footer {
     background-color: black;
     color: white;
@@ -316,3 +294,4 @@ footer a:focus {
     color: white;
     background-color: #FFCB05;
 }
+
